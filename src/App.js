@@ -1,5 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Web3 from "web3";
+import Web3Modal from "web3modal";
+
+
+ 
+// window.addEventListener('load', async () => {
+//   init();
+//   document.querySelector("#btn-connect").addEventListener("click", onConnect);
+//   // document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
+// });
+
 
 function App() {
       return (
@@ -56,7 +67,7 @@ function App() {
                   </ul>
                 </nav>
                 <div className="wallet-cnt">
-                  <button type="button" className="connect-btn">
+                  <button type="button" className="connect-btn" id="btn-connect">
                     CONNECT WALLET
                   </button>
                 </div>
